@@ -1,165 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About QuickNotes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
 
+    <main>
+        <h1>About QuickNotes</h1>
+        <p>QuickNotes is a fast and efficient note-taking application designed for users who need to capture ideas quickly. It provides a simple interface for organizing and managing your thoughts in one place.</p>
 
-    * {
-    box-sizing: border-box;
-}
+        <h2>How to use QuickNotes</h2>
+        <ol>
+            <li>Open the application on your device</li>
+            <li>Click the "New Note" button to create a note</li>
+            <li>Type your notes in the text area</li>
+            <li>Click "Save" to store your note</li>
+            <li>Use the search bar to find notes by keyword</li>
+        </ol>
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
+        <h2>Features</h2>
+        <ul class="features">
+            <li>Quick note creation and editing</li>
+            <li>Search functionality for finding notes</li>
+            <li>Keyboard shortcuts for power users</li>
+            <li>Automatic save functionality</li>
+            <li>Cloud sync across devices</li>
+        </ul>
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 1.5rem;
-}
+        <h2>Keyboard Shortcuts</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Shortcut</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ctrl+N</td>
+                    <td>Create a new note</td>
+                </tr>
+                <tr>
+                    <td>Ctrl+S</td>
+                    <td>Save current note</td>
+                </tr>
+                <tr>
+                    <td>Ctrl+F</td>
+                    <td>Open search</td>
+                </tr>
+                <tr>
+                    <td>Ctrl+D</td>
+                    <td>Delete current note</td>
+                </tr>
+            </tbody>
+        </table>
 
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-}
+        <h2>Send Feedback</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-nav a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-nav a:hover {
-    color: #ffcc00;
-    text-decoration: underline;
-}
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
 
-main {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 2rem;
-}
+            <button type="submit">Submit</button>
+        </form>
+    </main>
 
-h1 {
-    color: #333;
-}
-
-h2 {
-    color: #555;
-    margin-top: 2rem;
-}
-
-.features {
-    list-style: none;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 1rem;
-}
-
-.features li {
-    background-color: #f0f0f0;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.features li:hover {
-    transform: translateY(-5px);
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1rem 0;
-}
-
-table, th, td {
-    border: 1px solid #ddd;
-    padding: 0.75rem;
-    text-align: left;
-}
-
-th {
-    background-color: #f2f2f2;
-}
-
-form {
-    margin: 1rem 0;
-}
-
-label {
-    display: block;
-    margin-top: 1rem;
-    font-weight: bold;
-}
-
-input,
-textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-top: 0.5rem;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    margin-top: 1rem;
-    padding: 0.75rem 1.5rem;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #555;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-@media (max-width: 600px) {
-    header {
-        padding: 1rem;
-    }
-
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    nav {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    nav a {
-        display: block;
-        padding: 0.5rem;
-    }
-
-    main {
-        padding: 1rem;
-    }
-
-    .features {
-        grid-template-columns: 1fr;
-    }
-
-    table {
-        font-size: 0.9rem;
-    }
-
-    table, th, td {
-        padding: 0.5rem;
-    }
-}
+    <footer>
+        <p>&copy; 2026 QuickNotes. All rights reserved.</p>
+    </footer>
+</body>
+</html>
