@@ -3,40 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuickNotes</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 1rem;
-        }
-        nav a {
-            color: white;
-            margin-right: 1.5rem;
-            text-decoration: none;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        main {
-            padding: 2rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
-    </style>
+    <title>About QuickNotes</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -47,8 +15,68 @@
     </header>
 
     <main>
-        <h1>QuickNotes</h1>
-        <p>Welcome to QuickNotes, your fast and simple note-taking application.</p>
+        <h1>About QuickNotes</h1>
+        <p>QuickNotes is a fast and efficient note-taking application designed for users who need to capture ideas quickly. It provides a simple interface for organizing and managing your thoughts in one place.</p>
+
+        <h2>How to use QuickNotes</h2>
+        <ol>
+            <li>Open the application on your device</li>
+            <li>Click the "New Note" button to create a note</li>
+            <li>Type your notes in the text area</li>
+            <li>Click "Save" to store your note</li>
+            <li>Use the search bar to find notes by keyword</li>
+        </ol>
+
+        <h2>Features</h2>
+        <ul class="features">
+            <li>Quick note creation and editing</li>
+            <li>Search functionality for finding notes</li>
+            <li>Keyboard shortcuts for power users</li>
+            <li>Automatic save functionality</li>
+            <li>Cloud sync across devices</li>
+        </ul>
+
+        <h2>Keyboard Shortcuts</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Shortcut</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ctrl+N</td>
+                    <td>Create a new note</td>
+                </tr>
+                <tr>
+                    <td>Ctrl+S</td>
+                    <td>Save current note</td>
+                </tr>
+                <tr>
+                    <td>Ctrl+F</td>
+                    <td>Open search</td>
+                </tr>
+                <tr>
+                    <td>Ctrl+D</td>
+                    <td>Delete current note</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Send Feedback</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
     </main>
 
     <footer>
