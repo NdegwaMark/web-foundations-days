@@ -1,0 +1,81 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #222222;
+  --accent-color: #0066cc;
+  --border-color: #cccccc;
+  --button-bg: #0066cc;
+  --button-text: #ffffff;
+}
+
+body.dark {
+  --bg-color: #1e1e1e;
+  --text-color: #f0f0f0;
+  --accent-color: #66aaff;
+  --border-color: #555555;
+  --button-bg: #66aaff;
+  --button-text: #1e1e1e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  resize: vertical;
+}
+
+#char-count.warning {
+  color: orange;
+}
+
+#char-count.over {
+  color: red;
+  font-weight: bold;
+}
+
+.buttons {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
