@@ -1,0 +1,6 @@
+
+The most difficult concept for me was not one endpoint or table, but consistency under concurrency: deciding which guarantees must be strict and which can be relaxed during a flash sale. At first I wanted to make everything fast and cached, but that risked overselling seats. I overcame it by slowing down and tracing one seat through hold, payment, timeout, and retry until the invariants were clear: the database is the source of truth, Redis is only a cache, idempotency keys make retries safe, and a unique sold-seat constraint is the final guard. Drawing the race conditions and testing two clients competing for the same seat helped more than reading theory.
+
+From feedback on earlier designs, I would improve my capstone by being more exact in the architecture section: label which data is strongly consistent, show the waiting-room admission rate, and explain payment timeouts without hand-waving. I would also make the trade-offs sharper instead of listing generic pros and cons.
+
+Next I want to learn load testing and observability with k6/Grafana, Kubernetes autoscaling basics, PostgreSQL partitioning and lock behavior, and secure API design in more depth so my diagrams survive real traffic, not just review.
